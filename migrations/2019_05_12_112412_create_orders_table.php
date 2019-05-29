@@ -16,11 +16,11 @@ class CreateOrdersTable extends Migration
         Schema::create('orders', function (Blueprint $table) {
             $table->bigIncrements('id');
 
-            $table->decimal('amount')->default(0)->comment('¶©µ¥×Ü½ð¶î');
-            $table->string('username')->default('')->comment('¿Í»§Ãû×Ö');
-            $table->string('contact')->default('')->comment('¿Í»§ÁªÏµ·½Ê½');
-            $table->string('address')->default('')->comment('ÓÊ¼ÄµØÖ·');
-            $table->string('comments')->default('')->comment('±¸×¢');
+            $table->decimal('amount')->default(0)->comment('è®¢å•æ€»é‡‘é¢');
+            $table->string('username')->default('')->comment('å®¢æˆ·åå­—');
+            $table->string('contact')->default('')->comment('å®¢æˆ·è”ç³»æ–¹å¼');
+            $table->string('address')->default('')->comment('é‚®å¯„åœ°å€');
+            $table->string('comments')->default('')->comment('å¤‡æ³¨');
 
             $table->timestamps();
         });

@@ -16,14 +16,14 @@ class CreateGoodsTable extends Migration
         Schema::create('goods', function (Blueprint $table) {
             $table->bigIncrements('id');
 
-            $table->string('name')->default('')->comment('ÉÌÆ·Ãû³Æ');
-            $table->string('intro')->default('')->comment('ÉÌÆ·¼ò½é');
-            $table->string('kind')->default('')->comment('Æ·ÖÖ');
-            $table->string('shipping_date')->default('')->comment('·¢»õÆÚÏÞ');
-            $table->string('shipping_place')->default('')->comment('·¢»õµØ');
-            $table->decimal('price')->default(0)->comment('µ¥¼Û');
-            $table->string('pictures')->default('')->comment('ÉÌÆ·Í¼Æ¬');
-            $table->string('category_id')->default(0)->comment('·ÖÀà ID');
+            $table->string('name')->default('')->comment('å•†å“åç§°');
+            $table->string('intro')->default('')->comment('å•†å“ç®€ä»‹');
+            $table->string('kind')->default('')->comment('å“ç§');
+            $table->string('shipping_date')->default('')->comment('å‘è´§æœŸé™');
+            $table->string('shipping_place')->default('')->comment('å‘è´§åœ°');
+            $table->decimal('price')->default(0)->comment('å•ä»·');
+            $table->string('pictures')->default('')->comment('å•†å“å›¾ç‰‡');
+            $table->string('category_id')->default(0)->comment('åˆ†ç±» ID');
 
             $table->timestamps();
         });

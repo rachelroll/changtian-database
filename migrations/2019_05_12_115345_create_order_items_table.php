@@ -16,11 +16,11 @@ class CreateOrderItemsTable extends Migration
         Schema::create('order_items', function (Blueprint $table) {
             $table->bigIncrements('id');
 
-            $table->unsignedInteger('order_id')->default(0)->comment('订单编号');
-            $table->unsignedInteger('good_id')->default(0)->comment('商品ID');
-            $table->string('name')->default('')->comment('商品名称');
-            $table->string('price')->default('')->comment('商品单价');
-            $table->unsignedInteger('quantity')->default(0)->comment('购买数量');
+            $table->unsignedInteger('order_id')->default(0)->comment('璁㈠崟缂栧彿');
+            $table->unsignedInteger('good_id')->default(0)->comment('鍟嗗搧ID');
+            $table->string('name')->default('')->comment('鍟嗗搧鍚嶇О');
+            $table->string('price')->default('')->comment('鍟嗗搧鍗曚环');
+            $table->unsignedInteger('quantity')->default(0)->comment('璐拱鏁伴噺');
 
             $table->timestamps();
         });
